@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.weatherdetails.WeatherDetailsActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/dateLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/design_default_color_primary_variant"
+                android:padding="5dp"
+                android:text="Date"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/dayLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@color/design_default_color_secondary"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Day Details"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dateLabel" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/maxtemp_cLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="maxtemp_c"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dayLabel" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/maxtemp_fLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="maxtemp_f"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/maxtemp_cLabel" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/mintemp_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="mintemp_c"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/maxtemp_fLabel" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/mintemp_f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="mintemp_f"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mintemp_c" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/avgtemp_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="avgtemp_c"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mintemp_f" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/avgtemp_f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="avgtemp_f"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/avgtemp_c" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/maxwind_mph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="maxwind_mph"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/avgtemp_f" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/maxwind_kph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="maxwind_kph"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/maxwind_mph" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/totalprecip_mm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="totalprecip_mm"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/maxwind_kph" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/totalprecip_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="totalprecip_in"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/totalprecip_mm" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/totalsnow_cm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="totalsnow_cm"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/totalprecip_in" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/avgvis_km"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="avgvis_km"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/totalsnow_cm" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/avgvis_miles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="avgvis_miles"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/avgvis_km" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/avghumidity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="avghumidity"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/avgvis_miles" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/daily_will_it_rain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="daily_will_it_rain"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/avghumidity" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/daily_chance_of_rain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="daily_chance_of_rain"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/daily_will_it_rain" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/daily_will_it_snow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="daily_will_it_snow"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/daily_chance_of_rain" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/daily_chance_of_snow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="daily_chance_of_snow"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/daily_will_it_snow" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="condition"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/daily_chance_of_snow" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/uv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="uv"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/condition" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/astro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="7dp"
+                android:background="@color/design_default_color_secondary"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Astro"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/uv" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/sunrise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="sunrise"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/astro" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/sunset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="sunset"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sunrise" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/moonrise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="moonrise"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sunset" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/moonset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="moonset"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/moonrise" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/moon_phase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="moon_phase"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/moonset" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/moon_illumination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="moon_illumination"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/moon_phase" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/is_moon_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="is_moon_up"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/moon_illumination" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/is_sun_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="3dp"
+                android:text="is_sun_up"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/is_moon_up" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="7dp"
+                android:background="@color/design_default_color_secondary"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Hour"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/is_sun_up" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/hourDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/hour" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

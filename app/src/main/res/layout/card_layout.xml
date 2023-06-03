@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@color/teal_200"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/rlData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+
+        <TextView
+            android:id="@+id/idTVWeatherDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/lblMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Min Temp (Celcius) : "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_below="@id/idTVWeatherDate"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/idTVMinTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/lblMin"
+            android:layout_below="@id/idTVWeatherDate"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="10dp"
+            android:drawablePadding="2dp"
+            android:textColor="@color/orange"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/lblMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Max Temp (Celcius) : "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_below="@id/idTVMinTemp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/idTVMaxTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVMinTemp"
+            android:layout_toRightOf="@id/lblMax"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="10dp"
+            android:drawablePadding="2dp"
+            android:textColor="@color/red"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
